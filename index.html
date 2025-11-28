@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitvision Studios – Webdesign & Webshops</title>
+    <meta
+      name="description"
+      content="Bitvision Studios – moderne Onepager, Firmenwebsites und Webshops. Ihre Vision ist unser Antrieb."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="Firmen Logo.jpg" alt="Bitvision Studios Logo" />
+          <p>Bitvision Studios</p>
+        </div>
+        <button class="nav-toggle" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Bitvision Studios</h1>
+        <p class="hero-subtitle">Ihre Vision ist unser Antrieb.</p>
+        <p class="hero-text">
+          Wir erstellen moderne, performante Websites und Webshops für
+          Unternehmen, Selbstständige und Kreative – individuell, klar
+          strukturiert und nutzerfreundlich.
+        </p>
+        <div class="hero-actions">
+          <a href="#leistungen" class="btn btn-primary">Unsere Leistungen</a>
+          <a href="#kontakt" class="btn btn-outline">Projekt anfragen</a>
+        </div>
+        <div class="hero-badges">
+          <span>⚡ Moderne Onepager</span>
+          <span>🛒 Webshops & Django-Shops</span>
+          <span>🎨 Individuelles Design</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <p class="hero-card-title">Aktive Projekte</p>
+          <p class="hero-card-number">3</p>
+          <p class="hero-card-text">Websites in Entwicklung</p>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card-title">Response-Design</p>
+          <p class="hero-card-text">
+            Optimiert für Desktop, Tablet & Smartphone.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- Leistungen -->
+      <section id="leistungen" class="leistungen section">
+        <div class="section-header">
+          <h2>Unsere Leistungen</h2>
+          <p>
+            Von schlanken Onepagern bis zu komplexen Shop-Lösungen – wir holen
+            das Maximum aus Ihrer Online-Präsenz heraus.
+          </p>
+        </div>
+
+        <div class="leistungs-cards">
+          <!-- Onepager -->
+          <article class="cards">
+            <h3>Onepager</h3>
+            <p>Perfekt für Portfolios, Landingpages und kleine Unternehmen.</p>
+            <div class="slider-container">
+              <button class="btn-prev" aria-label="Vorheriges Bild">←</button>
+              <div class="slide-wrapper">
+                <img
+                  class="slide-img active"
+                  src=""
+                  alt="Beispiel Onepager Layout 1"
+                />
+                <img
+                  class="slide-img"
+                  src=""
+                  alt="Beispiel Onepager Layout 2"
+                />
+                <img
+                  class="slide-img"
+                  src=""
+                  alt="Beispiel Onepager Layout 3"
+                />
+              </div>
+              <button class="btn-zoom" aria-label="Bild vergrößern">⤢</button>
+              <button class="btn-next" aria-label="Nächstes Bild">→</button>
+            </div>
+            <ul class="card-list">
+              <li>Schnelle Umsetzung</li>
+              <li>Ideal für Kampagnen & Launches</li>
+              <li>Fokus auf klare Botschaften</li>
+            </ul>
+          </article>
+
+          <!-- Firmenwebsites -->
+          <article class="cards">
+            <h3>Firmenwebsites</h3>
+            <p>Mehrseitige Webauftritte – klassisch, modern & individuell.</p>
+            <div class="slider-container">
+              <button class="btn-prev" aria-label="Vorheriges Bild">←</button>
+              <div class="slide-wrapper">
+                <img
+                  class="slide-img active"
+                  src=""
+                  alt="Beispiel Firmenwebsite"
+                />
+              </div>
+              <button class="btn-zoom" aria-label="Bild vergrößern">⤢</button>
+              <button class="btn-next" aria-label="Nächstes Bild">→</button>
+            </div>
+            <ul class="card-list">
+              <li>Mehrere Unterseiten</li>
+              <li>Strukturierte Inhalte</li>
+              <li>Skalierbar für künftige Erweiterungen</li>
+            </ul>
+          </article>
+
+          <!-- Webshops -->
+          <article class="cards">
+            <h3>Webshops</h3>
+            <p>Moderne, performante Online-Shops (Frontend-basiert).</p>
+            <div class="slider-container">
+              <button class="btn-prev" aria-label="Vorheriges Bild">←</button>
+              <div class="slide-wrapper">
+                <img class="slide-img active" src="" alt="Beispiel Webshop" />
+              </div>
+              <button class="btn-zoom" aria-label="Bild vergrößern">⤢</button>
+              <button class="btn-next" aria-label="Nächstes Bild">→</button>
+            </div>
+            <ul class="card-list">
+              <li>Benutzerfreundliche Produktdarstellung</li>
+              <li>Saubere Frontend-Struktur</li>
+              <li>Später erweiterbar um Backend/Payments</li>
+            </ul>
+          </article>
+
+          <!-- Django-Shops -->
+          <article class="cards">
+            <h3>Django-Shops</h3>
+            <p>Serverbasierte E-Commerce-Lösungen (in Vorbereitung).</p>
+            <div class="slider-container">
+              <button class="btn-prev" aria-label="Vorheriges Bild">←</button>
+              <div class="slide-wrapper">
+                <img
+                  class="slide-img active"
+                  src=""
+                  alt="Beispiel Django Shop"
+                />
+              </div>
+              <button class="btn-zoom" aria-label="Bild vergrößern">⤢</button>
+              <button class="btn-next" aria-label="Nächstes Bild">→</button>
+            </div>
+            <ul class="card-list">
+              <li>Skalierbare Backend-Lösungen</li>
+              <li>Individuelle Features & Logik</li>
+              <li>Ideal für langfristige Projekte</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="section portfolio">
+        <div class="section-header">
+          <h2>Portfolio</h2>
+          <p>
+            Eine Auswahl von Projekten, die wir bereits umgesetzt haben oder
+            aktuell entwickeln.
+          </p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <h3>Landingpage für Start-up</h3>
+            <p>Fokussierte Onepager-Lösung für einen Produkt-Launch.</p>
+          </div>
+          <div class="portfolio-item">
+            <h3>Firmenwebsite für Dienstleister</h3>
+            <p>Mehrseitiger Auftritt mit Leistungsseiten & Kontakt.</p>
+          </div>
+          <div class="portfolio-item">
+            <h3>Konzept Webshop</h3>
+            <p>Prototype für einen modernen, klar strukturierten Shop.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Über uns -->
+      <section id="about" class="section about">
+        <div class="section-header">
+          <h2>Über Bitvision Studios</h2>
+          <p>
+            Wir verbinden technisches Know-how mit einem Auge für Design und
+            Struktur.
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Bitvision Studios steht für saubere, nachvollziehbare
+              Webentwicklung. Wir arbeiten strukturiert, transparent und immer
+              mit dem Ziel, Lösungen zu schaffen, die wirklich genutzt werden.
+            </p>
+            <p>
+              Egal ob erste Webpräsenz oder Ausbau eines bestehenden Projekts –
+              wir holen Sie da ab, wo Sie gerade stehen, und entwickeln
+              passgenaue Lösungen.
+            </p>
+          </div>
+          <div class="about-highlight">
+            <h3>Warum mit uns?</h3>
+            <ul>
+              <li>Direkte Abstimmung & ehrliche Beratung</li>
+              <li>Moderne Technologien Schritt für Schritt eingesetzt</li>
+              <li>Fokus auf Performance & Benutzerfreundlichkeit</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontakt -->
+      <section id="kontakt" class="section kontakt">
+        <div class="section-header">
+          <h2>Kontakt</h2>
+          <p>
+            Erzählen Sie uns von Ihrem Projekt – wir melden uns zeitnah mit
+            ersten Ideen.
+          </p>
+        </div>
+        <div class="kontakt-grid">
+          <form class="kontakt-form">
+            <div class="form-group">
+              <label for="name">Name*</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ihr Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ihre E-Mail-Adresse"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="projekt">Projekt / Anliegen*</label>
+              <textarea
+                id="projekt"
+                name="projekt"
+                rows="4"
+                placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Idee..."
+                required
+              ></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="privacy-consent" required />
+              <label for="privacy-consent">
+                Ich habe die
+                <button
+                  type="button"
+                  class="link-button"
+                  data-open-modal="privacy-modal"
+                >
+                  Datenschutzerklärung
+                </button>
+                gelesen und akzeptiere diese.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Nachricht senden
+            </button>
+            <p class="form-hint">
+              *Pflichtfelder – Das Formular ist aktuell ein Demo-Formular und
+              muss noch mit einem echten Mail-Backend verbunden werden.
+            </p>
+          </form>
+
+          <div class="kontakt-info">
+            <h3>Direkter Kontakt</h3>
+            <p>
+              <strong>E-Mail:</strong> info@bitvision-studios.de<br />
+              <strong>Ort:</strong> [Ihr Standort / Region]
+            </p>
+            <p>
+              Auf Wunsch erhalten Sie ein unverbindliches, individuelles
+              Angebot.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>
+          © <span id="year"></span> Bitvision Studios. Alle Rechte vorbehalten.
+        </p>
+        <div class="footer-links">
+          <button
+            class="link-button"
+            type="button"
+            data-open-modal="impressum-modal"
+          >
+            Impressum
+          </button>
+          <button
+            class="link-button"
+            type="button"
+            data-open-modal="privacy-modal"
+          >
+            Datenschutz
+          </button>
+          <button class="link-button" type="button" data-open-modal="agb-modal">
+            AGB
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modals: Impressum, Datenschutz, AGB -->
+    <div class="modal-overlay" id="impressum-modal" aria-hidden="true">
+      <div class="modal">
+        <button class="modal-close" data-close-modal>×</button>
+        <h1>Impressum</h1>
+        <p>
+          Bitvision Studios GbR<br />
+          Alfred-Delp-Stra&szlig;e 20<br />
+          59590 Geseke
+        </p>
+        <p>
+          <strong>Vertreten durch:</strong><br />
+          Timo Kaulbars &amp; Dominink van Rijswijk
+        </p>
+        <h2>Kontakt</h2>
+        <p>
+          Telefon: 016097714340<br />
+          E-Mail: bitvisionstudios@gmail.com
+        </p>
+        <h2>Gewerbeanmeldung</h2>
+        <p>
+          Die Gewerbeerlaubnis nach GewO wurde am 20.09.2025 von folgender
+          Stelle erteilt: Stadt Geseke.
+        </p>
+        <h2>
+          Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle
+        </h2>
+        <p>
+          Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
+          vor einer Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+        <h2>
+          Zentrale Kontaktstelle nach dem Digital Services Act - DSA (Verordnung
+          (EU) 2022/265)
+        </h2>
+        <p>
+          Unsere zentrale Kontaktstelle f&uuml;r Nutzer und Beh&ouml;rden nach
+          Art. 11, 12 DSA erreichen Sie wie folgt:
+        </p>
+        <p>E-Mail: bitvisionstudios@gmail.com</p>
+        <p>
+          Die für den Kontakt zur Verf&uuml;gung stehenden Sprachen sind:
+          Deutsch, Englisch.
+        </p>
+        <p>
+          Quelle:
+          <a href="https://www.e-recht24.de/impressum-generator.html"
+            >https://www.e-recht24.de/impressum- generator.html</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="privacy-modal" aria-hidden="true">
+      <div class="modal">
+        <button class="modal-close" data-close-modal>×</button>
+        <h1>Datenschutz&shy;erkl&auml;rung</h1>
+        <h2>1. Datenschutz auf einen Blick</h2>
+        <h3>Allgemeine Hinweise</h3>
+        <p>
+          Die folgenden Hinweise geben einen einfachen &Uuml;berblick
+          dar&uuml;ber, was mit Ihren personenbezogenen Daten passiert, wenn Sie
+          diese Website besuchen. Personenbezogene Daten sind alle Daten, mit
+          denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen.
+          Ausf&uuml;hrliche Informationen zum Thema Datenschutz entnehmen Sie
+          unserer unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.
+        </p>
+        <h3>Datenerfassung auf dieser Website</h3>
+        <h4>
+          Wer ist verantwortlich f&uuml;r die Datenerfassung auf dieser Website?
+        </h4>
+        <p>
+          Die Datenverarbeitung auf dieser Website erfolgt durch den
+          Websitebetreiber. Dessen Kontaktdaten k&ouml;nnen Sie dem Abschnitt
+          &bdquo;Hinweis zur Verantwortlichen Stelle&ldquo; in dieser
+          Datenschutzerkl&auml;rung entnehmen.
+        </p>
+        <h4>Wie erfassen wir Ihre Daten?</h4>
+        <p>
+          Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese
+          mitteilen. Hierbei kann es sich z.&nbsp;B. um Daten handeln, die Sie
+          in ein Kontaktformular eingeben.
+        </p>
+        <p>
+          Andere Daten werden automatisch oder nach Ihrer Einwilligung beim
+          Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem
+          technische Daten (z.&nbsp;B. Internetbrowser, Betriebssystem oder
+          Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt
+          automatisch, sobald Sie diese Website betreten.
+        </p>
+        <h4>Wof&uuml;r nutzen wir Ihre Daten?</h4>
+        <p>
+          Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung
+          der Website zu gew&auml;hrleisten. Andere Daten k&ouml;nnen zur
+          Analyse Ihres Nutzerverhaltens verwendet werden. Sofern &uuml;ber die
+          Website Vertr&auml;ge geschlossen oder angebahnt werden k&ouml;nnen,
+          werden die &uuml;bermittelten Daten auch f&uuml;r Vertragsangebote,
+          Bestellungen oder sonstige Auftragsanfragen verarbeitet.
+        </p>
+        <h4>Welche Rechte haben Sie bez&uuml;glich Ihrer Daten?</h4>
+        <p>
+          Sie haben jederzeit das Recht, unentgeltlich Auskunft &uuml;ber
+          Herkunft, Empf&auml;nger und Zweck Ihrer gespeicherten
+          personenbezogenen Daten zu erhalten. Sie haben au&szlig;erdem ein
+          Recht, die Berichtigung oder L&ouml;schung dieser Daten zu verlangen.
+          Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben,
+          k&ouml;nnen Sie diese Einwilligung jederzeit f&uuml;r die Zukunft
+          widerrufen. Au&szlig;erdem haben Sie das Recht, unter bestimmten
+          Umst&auml;nden die Einschr&auml;nkung der Verarbeitung Ihrer
+          personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein
+          Beschwerderecht bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde zu.
+        </p>
+        <p>
+          Hierzu sowie zu weiteren Fragen zum Thema Datenschutz k&ouml;nnen Sie
+          sich jederzeit an uns wenden.
+        </p>
+        <h3>Analyse-Tools und Tools von Dritt&shy;anbietern</h3>
+        <p>
+          Beim Besuch dieser Website kann Ihr Surf- Verhalten statistisch
+          ausgewertet werden. Das geschieht vor allem mit sogenannten
+          Analyseprogrammen.
+        </p>
+        <p>
+          Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in
+          der folgenden Datenschutzerkl&auml;rung.
+        </p>
+        <h2>2. Hosting</h2>
+        <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
+        <h3>Strato</h3>
+        <p>
+          Anbieter ist die Strato AG, Otto-Ostrowski-Stra&szlig;e 7, 10249
+          Berlin (nachfolgend &bdquo;Strato&ldquo;). Wenn Sie unsere Website
+          besuchen, erfasst Strato verschiedene Logfiles inklusive Ihrer IP-
+          Adressen.
+        </p>
+        <p>
+          Weitere Informationen entnehmen Sie der Datenschutzerkl&auml;rung von
+          Strato:
+          <a
+            href="https://www.strato.de/datenschutz/"
+            target="_blank"
+            rel="noopener
+noreferrer"
+            >https://www.strato.de/datenschutz/</a
+          >.
+        </p>
+        <p>
+          Die Verwendung von Strato erfolgt auf Grundlage von Art. 6 Abs. 1 lit.
+          f DSGVO. Wir haben ein berechtigtes Interesse an einer m&ouml;glichst
+          zuverl&auml;ssigen Darstellung unserer Website. Sofern eine
+          entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung
+          ausschlie&szlig;lich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und
+          &sect; 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von
+          Cookies oder den Zugriff auf Informationen im Endger&auml;t des
+          Nutzers (z.&nbsp;B. Device-Fingerprinting) im Sinne des TDDDG umfasst.
+          Die Einwilligung ist jederzeit widerrufbar.
+        </p>
+        <h4>Auftragsverarbeitung</h4>
+        <p>
+          Wir haben einen Vertrag &uuml;ber Auftragsverarbeitung (AVV) zur
+          Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es
+          sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der
+          gew&auml;hrleistet, dass dieser die personenbezogenen Daten unserer
+          Websitebesucher nur nach unseren Weisungen und unter Einhaltung der
+          DSGVO verarbeitet.
+        </p>
+        <h2>3. Allgemeine Hinweise und Pflicht&shy;informationen</h2>
+        <h3>Datenschutz</h3>
+        <p>
+          Die Betreiber dieser Seiten nehmen den Schutz Ihrer pers&ouml;nlichen
+          Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten
+          vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften
+          sowie dieser Datenschutzerkl&auml;rung.
+        </p>
+        <p>
+          Wenn Sie diese Website benutzen, werden verschiedene personenbezogene
+          Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie
+          pers&ouml;nlich identifiziert werden k&ouml;nnen. Die vorliegende
+          Datenschutzerkl&auml;rung erl&auml;utert, welche Daten wir erheben und
+          wof&uuml;r wir sie nutzen. Sie erl&auml;utert auch, wie und zu welchem
+          Zweck das geschieht.
+        </p>
+        <p>
+          Wir weisen darauf hin, dass die Daten&uuml;bertragung im Internet
+          (z.&nbsp;B. bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken
+          aufweisen kann. Ein l&uuml;ckenloser Schutz der Daten vor dem Zugriff
+          durch Dritte ist nicht m&ouml;glich.
+        </p>
+        <h3>Hinweis zur verantwortlichen Stelle</h3>
+        <p>
+          Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser
+          Website ist:
+        </p>
+        <p>
+          Timo Kaulbars &amp; Dominik van Rijswijk / Inhaber.
+          Alfred-Delp-Stra&szlig;e 20, 59590, Geseke
+        </p>
+        <p>
+          Telefon: 016097714340<br />
+          E-Mail: bitvisionstudios@gmail.com
+        </p>
+        <p>
+          Verantwortliche Stelle ist die nat&uuml;rliche oder juristische
+          Person, die allein oder gemeinsam mit anderen &uuml;ber die Zwecke und
+          Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen,
+          E-Mail- Adressen o. &Auml;.) entscheidet.
+        </p>
+        <h3>Speicherdauer</h3>
+        <p>
+          Soweit innerhalb dieser Datenschutzerkl&auml;rung keine speziellere
+          Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten
+          bei uns, bis der Zweck f&uuml;r die Datenverarbeitung entf&auml;llt.
+          Wenn Sie ein berechtigtes L&ouml;schersuchen geltend machen oder eine
+          Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten
+          gel&ouml;scht, sofern wir keine anderen rechtlich zul&auml;ssigen
+          Gr&uuml;nde f&uuml;r die Speicherung Ihrer personenbezogenen Daten
+          haben (z.&nbsp;B. steuer- oder handelsrechtliche
+          Aufbewahrungsfristen); im letztgenannten Fall erfolgt die
+          L&ouml;schung nach Fortfall dieser Gr&uuml;nde.
+        </p>
+        <h3>
+          Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf
+          dieser Website
+        </h3>
+        <p>
+          Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten
+          wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit.
+          a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere
+          Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle
+          einer ausdr&uuml;cklichen Einwilligung in die &Uuml;bertragung
+          personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung
+          au&szlig;erdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern
+          Sie in die Speicherung von Cookies oder in den Zugriff auf
+          Informationen in Ihr Endger&auml;t (z.&nbsp;B. via
+          Device-Fingerprinting) eingewilligt haben, erfolgt die
+          Datenverarbeitung zus&auml;tzlich auf Grundlage von &sect; 25 Abs. 1
+          TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur
+          Vertragserf&uuml;llung oder zur Durchf&uuml;hrung vorvertraglicher
+          Ma&szlig;nahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage
+          des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre
+          Daten, sofern diese zur Erf&uuml;llung einer rechtlichen Verpflichtung
+          erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die
+          Datenverarbeitung kann ferner auf Grundlage unseres berechtigten
+          Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. &Uuml;ber die
+          jeweils im Einzelfall einschl&auml;gigen Rechtsgrundlagen wird in den
+          folgenden Abs&auml;tzen dieser Datenschutzerkl&auml;rung informiert.
+        </p>
+        <h3>Empf&auml;nger von personenbezogenen Daten</h3>
+        <p>
+          Im Rahmen unserer Gesch&auml;ftst&auml;tigkeit arbeiten wir mit
+          verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine
+          &Uuml;bermittlung von personenbezogenen Daten an diese externen
+          Stellen erforderlich. Wir geben personenbezogene Daten nur dann an
+          externe Stellen weiter, wenn dies im Rahmen einer
+          Vertragserf&uuml;llung erforderlich ist, wenn wir gesetzlich hierzu
+          verpflichtet sind (z.&nbsp;B. Weitergabe von Daten an
+          Steuerbeh&ouml;rden), wenn wir ein berechtigtes Interesse nach Art. 6
+          Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige
+          Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von
+          Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden
+          nur auf Grundlage eines g&uuml;ltigen Vertrags &uuml;ber
+          Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung
+          wird ein Vertrag &uuml;ber gemeinsame Verarbeitung geschlossen.
+        </p>
+        <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+        <p>
+          Viele Datenverarbeitungsvorg&auml;nge sind nur mit Ihrer
+          ausdr&uuml;cklichen Einwilligung m&ouml;glich. Sie k&ouml;nnen eine
+          bereits erteilte Einwilligung jederzeit widerrufen. Die
+          Rechtm&auml;&szlig;igkeit der bis zum Widerruf erfolgten
+          Datenverarbeitung bleibt vom Widerruf unber&uuml;hrt.
+        </p>
+        <h3>
+          Widerspruchsrecht gegen die Datenerhebung in besonderen F&auml;llen
+          sowie gegen Direktwerbung (Art. 21 DSGVO)
+        </h3>
+        <p>
+          WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER
+          F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GR&Uuml;NDEN, DIE
+          SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG
+          IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH
+          F&Uuml;R EIN AUF DIESE BESTIMMUNGEN GEST&Uuml;TZTES PROFILING. DIE
+          JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT,
+          ENTNEHMEN SIE DIESER DATENSCHUTZERKL&Auml;RUNG. WENN SIE WIDERSPRUCH
+          EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT
+          MEHR VERARBEITEN, ES SEI DENN, WIR K&Ouml;NNEN ZWINGENDE
+          SCHUTZW&Uuml;RDIGE GR&Uuml;NDE F&Uuml;R DIE VERARBEITUNG NACHWEISEN,
+          DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN &Uuml;BERWIEGEN ODER DIE
+          VERARBEITUNG DIENT DER GELTENDMACHUNG, AUS&Uuml;BUNG ODER VERTEIDIGUNG
+          VON RECHTSANSPR&Uuml;CHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).
+        </p>
+        <p>
+          WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU
+          BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE
+          VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE
+          DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH F&Uuml;R DAS PROFILING,
+          SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE
+          WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT
+          MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21
+          ABS. 2 DSGVO).
+        </p>
+        <h3>
+          Beschwerde&shy;recht bei der zust&auml;ndigen
+          Aufsichts&shy;beh&ouml;rde
+        </h3>
+        <p>
+          Im Falle von Verst&ouml;&szlig;en gegen die DSGVO steht den
+          Betroffenen ein Beschwerderecht bei einer Aufsichtsbeh&ouml;rde,
+          insbesondere in dem Mitgliedstaat ihres gew&ouml;hnlichen Aufenthalts,
+          ihres Arbeitsplatzes oder des Orts des mutma&szlig;lichen
+          Versto&szlig;es zu. Das Beschwerderecht besteht unbeschadet
+          anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.
+        </p>
+        <h3>Recht auf Daten&shy;&uuml;bertrag&shy;barkeit</h3>
+        <p>
+          Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung
+          oder in Erf&uuml;llung eines Vertrags automatisiert verarbeiten, an
+          sich oder an einen Dritten in einem g&auml;ngigen, maschinenlesbaren
+          Format aush&auml;ndigen zu lassen. Sofern Sie die direkte
+          &Uuml;bertragung der Daten an einen anderen Verantwortlichen
+          verlangen, erfolgt dies nur, soweit es technisch machbar ist.
+        </p>
+        <h3>Auskunft, Berichtigung und L&ouml;schung</h3>
+        <p>
+          Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit
+          das Recht auf unentgeltliche Auskunft &uuml;ber Ihre gespeicherten
+          personenbezogenen Daten, deren Herkunft und Empf&auml;nger und den
+          Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder
+          L&ouml;schung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema
+          personenbezogene Daten k&ouml;nnen Sie sich jederzeit an uns wenden.
+        </p>
+        <h3>Recht auf Einschr&auml;nkung der Verarbeitung</h3>
+        <p>
+          Sie haben das Recht, die Einschr&auml;nkung der Verarbeitung Ihrer
+          personenbezogenen Daten zu verlangen. Hierzu k&ouml;nnen Sie sich
+          jederzeit an uns wenden. Das Recht auf Einschr&auml;nkung der
+          Verarbeitung besteht in folgenden F&auml;llen:
+        </p>
+        <ul>
+          <li>
+            Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten
+            personenbezogenen Daten bestreiten, ben&ouml;tigen wir in der Regel
+            Zeit, um dies zu &uuml;berpr&uuml;fen. F&uuml;r die Dauer der
+            Pr&uuml;fung haben Sie das Recht, die Einschr&auml;nkung der
+            Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+          </li>
+          <li>
+            Wenn die Verarbeitung Ihrer personenbezogenen Daten
+            unrechtm&auml;&szlig;ig geschah/geschieht, k&ouml;nnen Sie statt der
+            L&ouml;schung die Einschr&auml;nkung der Datenverarbeitung
+            verlangen.
+          </li>
+          <li>
+            Wenn wir Ihre personenbezogenen Daten nicht mehr ben&ouml;tigen, Sie
+            sie jedoch zur Aus&uuml;bung, Verteidigung oder Geltendmachung von
+            Rechtsanspr&uuml;chen ben&ouml;tigen, haben Sie das Recht, statt der
+            L&ouml;schung die Einschr&auml;nkung der Verarbeitung Ihrer
+            personenbezogenen Daten zu verlangen.
+          </li>
+          <li>
+            Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt
+            haben, muss eine Abw&auml;gung zwischen Ihren und unseren Interessen
+            vorgenommen werden. Solange noch nicht feststeht, wessen Interessen
+            &uuml;berwiegen, haben Sie das Recht, die Einschr&auml;nkung der
+            Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+          </li>
+        </ul>
+        <p>
+          Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten
+          eingeschr&auml;nkt haben, d&uuml;rfen diese Daten &ndash; von ihrer
+          Speicherung abgesehen &ndash; nur mit Ihrer Einwilligung oder zur
+          Geltendmachung, Aus&uuml;bung oder Verteidigung von
+          Rechtsanspr&uuml;chen oder zum Schutz der Rechte einer anderen
+          nat&uuml;rlichen oder juristischen Person oder aus Gr&uuml;nden eines
+          wichtigen &ouml;ffentlichen Interesses der Europ&auml;ischen Union
+          oder eines Mitgliedstaats verarbeitet werden.
+        </p>
+        <h3>SSL- bzw. TLS-Verschl&uuml;sselung</h3>
+        <p>
+          Diese Seite nutzt aus Sicherheitsgr&uuml;nden und zum Schutz der
+          &Uuml;bertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen
+          oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-
+          bzw. TLS-Verschl&uuml;sselung. Eine verschl&uuml;sselte Verbindung
+          erkennen Sie daran, dass die Adresszeile des Browsers von
+          &bdquo;http://&ldquo; auf &bdquo;https://&ldquo; wechselt und an dem
+          Schloss-Symbol in Ihrer Browserzeile.
+        </p>
+        <p>
+          Wenn die SSL- bzw. TLS-Verschl&uuml;sselung aktiviert ist, k&ouml;nnen
+          die Daten, die Sie an uns &uuml;bermitteln, nicht von Dritten
+          mitgelesen werden.
+        </p>
+        <h3>Widerspruch gegen Werbe-E-Mails</h3>
+        <p>
+          Der Nutzung von im Rahmen der Impressumspflicht ver&ouml;ffentlichten
+          Kontaktdaten zur &Uuml;bersendung von nicht ausdr&uuml;cklich
+          angeforderter Werbung und Informationsmaterialien wird hiermit
+          widersprochen. Die Betreiber der Seiten behalten sich
+          ausdr&uuml;cklich rechtliche Schritte im Falle der unverlangten
+          Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
+        </p>
+        <h2>4. Datenerfassung auf dieser Website</h2>
+        <h3>Cookies</h3>
+        <p>
+          Unsere Internetseiten verwenden so genannte &bdquo;Cookies&ldquo;.
+          Cookies sind kleine Datenpakete und richten auf Ihrem Endger&auml;t
+          keinen Schaden an. Sie werden entweder vor&uuml;bergehend f&uuml;r die
+          Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente
+          Cookies) auf Ihrem Endger&auml;t gespeichert. Session-Cookies werden
+          nach Ende Ihres Besuchs automatisch gel&ouml;scht. Permanente Cookies
+          bleiben auf Ihrem Endger&auml;t gespeichert, bis Sie diese selbst
+          l&ouml;schen oder eine automatische L&ouml;schung durch Ihren
+          Webbrowser erfolgt.
+        </p>
+        <p>
+          Cookies k&ouml;nnen von uns (First-Party-Cookies) oder von
+          Drittunternehmen stammen (sog. Third-Party-Cookies).
+          Third-Party-Cookies erm&ouml;glichen die Einbindung bestimmter
+          Dienstleistungen von Drittunternehmen innerhalb von Webseiten
+          (z.&nbsp;B. Cookies zur Abwicklung von Zahlungsdienstleistungen).
+        </p>
+        <p>
+          Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind
+          technisch notwendig, da bestimmte Webseitenfunktionen ohne diese nicht
+          funktionieren w&uuml;rden (z.&nbsp;B. die Warenkorbfunktion oder die
+          Anzeige von Videos). Andere Cookies k&ouml;nnen zur Auswertung des
+          Nutzerverhaltens oder zu Werbezwecken verwendet werden.
+        </p>
+        <p>
+          Cookies, die zur Durchf&uuml;hrung des elektronischen
+          Kommunikationsvorgangs, zur Bereitstellung bestimmter, von Ihnen
+          erw&uuml;nschter Funktionen (z.&nbsp;B. f&uuml;r die
+          Warenkorbfunktion) oder zur Optimierung der Website (z.&nbsp;B.
+          Cookies zur Messung des Webpublikums) erforderlich sind (notwendige
+          Cookies), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
+          gespeichert, sofern keine andere Rechtsgrundlage angegeben wird. Der
+          Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von
+          notwendigen Cookies zur technisch fehlerfreien und optimierten
+          Bereitstellung seiner Dienste. Sofern eine Einwilligung zur
+          Speicherung von Cookies und vergleichbaren
+          Wiedererkennungstechnologien abgefragt wurde, erfolgt die Verarbeitung
+          ausschlie&szlig;lich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1
+          lit. a DSGVO und &sect; 25 Abs. 1 TDDDG); die Einwilligung ist
+          jederzeit widerrufbar.
+        </p>
+        <p>
+          Sie k&ouml;nnen Ihren Browser so einstellen, dass Sie &uuml;ber das
+          Setzen von Cookies informiert werden und Cookies nur im Einzelfall
+          erlauben, die Annahme von Cookies f&uuml;r bestimmte F&auml;lle oder
+          generell ausschlie&szlig;en sowie das automatische L&ouml;schen der
+          Cookies beim Schlie&szlig;en des Browsers aktivieren. Bei der
+          Deaktivierung von Cookies kann die Funktionalit&auml;t dieser Website
+          eingeschr&auml;nkt sein.
+        </p>
+        <p>
+          Welche Cookies und Dienste auf dieser Website eingesetzt werden,
+          k&ouml;nnen Sie dieser Datenschutzerkl&auml;rung entnehmen.
+        </p>
+        <h3>Anfrage per E-Mail, Telefon oder Telefax</h3>
+        <p>
+          Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre
+          Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten
+          (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns
+          gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre
+          Einwilligung weiter.
+        </p>
+        <p>
+          Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1
+          lit. b DSGVO, sofern Ihre Anfrage mit der Erf&uuml;llung eines
+          Vertrags zusammenh&auml;ngt oder zur Durchf&uuml;hrung
+          vorvertraglicher Ma&szlig;nahmen erforderlich ist. In allen
+          &uuml;brigen F&auml;llen beruht die Verarbeitung auf unserem
+          berechtigten Interesse an der effektiven Bearbeitung der an uns
+          gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer
+          Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt
+          wurde; die Einwilligung ist jederzeit widerrufbar.
+        </p>
+        <p>
+          Die von Ihnen an uns per Kontaktanfragen &uuml;bersandten Daten
+          verbleiben bei uns, bis Sie uns zur L&ouml;schung auffordern, Ihre
+          Einwilligung zur Speicherung widerrufen oder der Zweck f&uuml;r die
+          Datenspeicherung entf&auml;llt (z.&nbsp;B. nach abgeschlossener
+          Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen
+          &ndash; insbesondere gesetzliche Aufbewahrungsfristen &ndash; bleiben
+          unber&uuml;hrt.
+        </p>
+        <p>
+          Quelle:
+          <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="agb-modal" aria-hidden="true">
+      <div class="modal">
+        <button class="modal-close" data-close-modal>×</button>
+        <h2>Allgemeine Geschäftsbedingungen (AGB)</h2>
+
+        <h3>1. Geltungsbereich</h3>
+        <p>
+          Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge
+          zwischen Bitvision Studios, [Adresse], (nachfolgend „Anbieter“) und
+          seinen Kunden (nachfolgend „Kunde“) über Leistungen im Bereich
+          Webdesign, Webentwicklung und damit zusammenhängende Dienstleistungen.
+        </p>
+
+        <h3>2. Vertragsschluss</h3>
+        <p>
+          Ein Vertrag kommt zustande, wenn der Kunde ein Angebot des Anbieters
+          schriftlich oder in Textform (z. B. per E-Mail) annimmt oder wenn der
+          Anbieter die beauftragte Leistung beginnt. Angebote des Anbieters sind
+          unverbindlich, sofern sie nicht ausdrücklich als verbindlich
+          bezeichnet sind.
+        </p>
+
+        <h3>3. Leistungsumfang</h3>
+        <p>
+          Der konkrete Leistungsumfang ergibt sich aus dem jeweiligen Angebot,
+          Leistungsbeschreibungen oder Projektvereinbarungen. Änderungs- und
+          Erweiterungswünsche des Kunden nach Vertragsschluss können zu einer
+          Anpassung von Terminen und Vergütung führen.
+        </p>
+
+        <h3>4. Mitwirkungspflichten des Kunden</h3>
+        <p>
+          Der Kunde stellt alle zur Durchführung des Projekts erforderlichen
+          Inhalte (Texte, Bilder, Logos etc.) rechtzeitig, vollständig und in
+          geeigneter Form zur Verfügung und garantiert, dass er über die hierfür
+          notwendigen Rechte verfügt. Verzögerungen durch fehlende Mitwirkung
+          können zu Terminverschiebungen und Mehraufwand führen.
+        </p>
+
+        <h3>5. Vergütung und Zahlungsbedingungen</h3>
+        <p>
+          Es gilt die im Angebot vereinbarte Vergütung. Sofern nicht anders
+          angegeben, verstehen sich alle Preise netto zuzüglich der jeweils
+          gültigen gesetzlichen Umsatzsteuer. Zahlungen sind innerhalb von [z.
+          B. 14 Tagen] nach Rechnungsdatum ohne Abzug fällig.
+        </p>
+
+        <h3>6. Nutzungsrechte</h3>
+        <p>
+          Der Anbieter räumt dem Kunden nach vollständiger Bezahlung der
+          vereinbarten Vergütung die einfachen, nicht übertragbaren
+          Nutzungsrechte an den erstellten Werken ein, soweit dies für den
+          vertraglich vereinbarten Zweck erforderlich ist. Eine Weitergabe an
+          Dritte oder Veränderung außerhalb des vereinbarten Umfangs bedarf der
+          Zustimmung des Anbieters.
+        </p>
+
+        <h3>7. Haftung</h3>
+        <p>
+          Der Anbieter haftet unbeschränkt für Vorsatz und grobe Fahrlässigkeit.
+          Bei leichter Fahrlässigkeit haftet der Anbieter nur bei Verletzung
+          wesentlicher Vertragspflichten (Kardinalpflichten) und beschränkt auf
+          den vertragstypischen, vorhersehbaren Schaden. Eine Haftung für
+          entgangenen Gewinn ist ausgeschlossen, soweit gesetzlich zulässig.
+        </p>
+
+        <h3>8. Gewährleistung</h3>
+        <p>
+          Der Kunde ist verpflichtet, die erbrachten Leistungen nach Ablieferung
+          zu prüfen und etwaige Mängel innerhalb einer angemessenen Frist
+          anzuzeigen. Offensichtliche Mängel sind innerhalb von [z. B. 14 Tagen]
+          zu rügen. Der Anbieter wird berechtigte Mängel innerhalb einer
+          angemessenen Frist nachbessern.
+        </p>
+
+        <h3>9. Schlussbestimmungen</h3>
+        <p>
+          Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des
+          UN-Kaufrechts. Sofern der Kunde Kaufmann ist, ist der Sitz des
+          Anbieters Gerichtsstand für alle Streitigkeiten aus dem
+          Vertragsverhältnis. Sollten einzelne Bestimmungen dieser AGB unwirksam
+          sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
+        </p>
+
+        <p style="font-size: 0.8rem; color: #9ca3af">
+          Hinweis: Diese AGB sind ein allgemeines Muster und müssen an Ihr
+          konkretes Geschäftsmodell angepasst und rechtlich geprüft werden.
+        </p>
+      </div>
+    </div>
+
+    <!-- Zoom Modal für Slider-Bilder -->
+    <div class="modal-overlay" id="image-modal" aria-hidden="true">
+      <div class="modal modal-image">
+        <button class="modal-close" data-close-modal>×</button>
+        <img id="modal-image-element" src="" alt="Vergrößertes Bild" />
+      </div>
+    </div>
+
+    <!-- Cookie Hinweis / Consent-Banner -->
+    <div class="cookie-banner" id="cookie-banner" aria-hidden="true">
+      <div class="cookie-banner-inner">
+        <p>
+          Wir verwenden Cookies, um unsere Website technisch bereitzustellen und
+          deren Nutzung zu verbessern. Weitere Informationen finden Sie in
+          unserer
+          <button
+            type="button"
+            class="link-button"
+            data-open-modal="privacy-modal"
+          >
+            Datenschutzerklärung</button
+          >.
+        </p>
+        <div class="cookie-banner-actions">
+          <button class="btn btn-outline" id="cookie-decline">Ablehnen</button>
+          <button class="btn btn-primary" id="cookie-accept">
+            Akzeptieren
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
