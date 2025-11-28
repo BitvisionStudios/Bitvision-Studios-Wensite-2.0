@@ -1,17 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("main.js wurde geladen ✅");
 
-  // =========================
   // Jahr im Footer
-  // =========================
   const yearEl = document.getElementById("year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // =========================
   // Mobile Navigation
-  // =========================
   const navToggle = document.querySelector(".nav-toggle");
   const navLinks = document.querySelector(".nav-links");
 
@@ -27,9 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // =========================
   // Slider-Logik für alle slider-container
-  // =========================
   document.querySelectorAll(".slider-container").forEach((slider) => {
     const images = slider.querySelectorAll(".slide-img");
     const prevBtn = slider.querySelector(".btn-prev");
@@ -72,9 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // =========================
   // Modals (Impressum, Datenschutz, AGB, Bildmodal)
-  // =========================
   const modalOverlays = document.querySelectorAll(".modal-overlay");
 
   function closeAllModals() {
@@ -83,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Buttons, die ein Modal öffnen
   document.querySelectorAll("[data-open-modal]").forEach((btn) => {
     btn.addEventListener("click", () => {
       const targetId = btn.getAttribute("data-open-modal");
@@ -94,14 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Buttons, die Modals schließen
   document.querySelectorAll("[data-close-modal]").forEach((btn) => {
     btn.addEventListener("click", () => {
       closeAllModals();
     });
   });
 
-  // Klick auf Overlay schließt Modal
   modalOverlays.forEach((overlay) => {
     overlay.addEventListener("click", (e) => {
       if (e.target === overlay) {
@@ -110,9 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // =========================
-  // Demo-Kontaktformular (kein echtes Backend)
-  // =========================
+  // Demo-Kontaktformular (noch ohne Backend)
   const contactForm = document.querySelector(".kontakt-form");
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
@@ -124,9 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // =========================
   // Cookie-Banner / Consent
-  // =========================
   const banner = document.getElementById("cookie-banner");
   const acceptBtn = document.getElementById("cookie-accept");
   const declineBtn = document.getElementById("cookie-decline");
@@ -154,11 +139,14 @@ document.addEventListener("DOMContentLoaded", () => {
       banner.classList.remove("show");
       banner.setAttribute("aria-hidden", "true");
       console.log("Consent gesetzt auf:", value);
+
+      // optional: nach Schließen nach oben scrollen
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     acceptBtn.addEventListener("click", () => {
       setConsent("accepted");
-      // später: hier z.B. Analytics nur nach Consent laden
+      // hier später z.B. Analytics nur nach Zustimmung laden
     });
 
     declineBtn.addEventListener("click", () => {

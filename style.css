@@ -30,12 +30,7 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  background: radial-gradient(
-    circle at top left,
-    #111827 0,
-    #020617 45%,
-    #000 90%
-  );
+  background: radial-gradient(circle at top left, #111827 0, #020617 45%, #000 90%);
   color: var(--text);
 }
 
@@ -218,11 +213,7 @@ body {
   content: "";
   position: absolute;
   inset: -40%;
-  background: radial-gradient(
-    circle at top,
-    rgba(79, 70, 229, 0.28),
-    transparent 60%
-  );
+  background: radial-gradient(circle at top, rgba(79, 70, 229, 0.28), transparent 60%);
   opacity: 0.9;
   filter: blur(4px);
   z-index: -1;
@@ -398,8 +389,7 @@ body {
   justify-content: center;
   cursor: pointer;
   backdrop-filter: blur(8px);
-  transition: background var(--transition-fast),
-    transform var(--transition-fast);
+  transition: background var(--transition-fast), transform var(--transition-fast);
   font-size: 1rem;
 }
 
@@ -675,6 +665,58 @@ textarea:focus {
   border-radius: 12px;
 }
 
+/* Cookie-Banner */
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  background: rgba(15, 23, 42, 0.98);
+  border-top: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 0.9rem 1rem;
+  display: none; /* wird per JS eingeblendet */
+}
+
+.cookie-banner.show {
+  display: block;
+}
+
+.cookie-banner-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.cookie-banner-inner p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cookie-banner-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 720px) {
+  .cookie-banner-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cookie-banner-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
 /* Animationen */
 
 @keyframes fadeInUp {
@@ -757,57 +799,5 @@ textarea:focus {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  /* Cookie-Banner */
-
-  .cookie-banner {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 90;
-    background: rgba(15, 23, 42, 0.98);
-    border-top: 1px solid rgba(148, 163, 184, 0.4);
-    padding: 0.9rem 1rem;
-    display: none; /* wird per JS eingeblendet */
-  }
-
-  .cookie-banner.show {
-    display: block;
-  }
-
-  .cookie-banner-inner {
-    max-width: 1120px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: space-between;
-    font-size: 0.85rem;
-    color: var(--text-muted);
-  }
-
-  .cookie-banner-inner p {
-    margin: 0;
-    line-height: 1.4;
-  }
-
-  .cookie-banner-actions {
-    display: flex;
-    gap: 0.5rem;
-    flex-shrink: 0;
-  }
-
-  @media (max-width: 720px) {
-    .cookie-banner-inner {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .cookie-banner-actions {
-      width: 100%;
-      justify-content: flex-end;
-    }
   }
 }
